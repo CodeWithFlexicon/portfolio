@@ -10,7 +10,7 @@ export default function Navbar() {
   const [open, setOpen] = useState(false);
 
   function toggleMenu() {
-    setOpen((prev) => !prev);
+    setOpen((open) => !open);
   }
 
   function closeMenu() {
@@ -43,7 +43,7 @@ export default function Navbar() {
         </div>
 
         {/* -------------------------Mobile Menu------------------------- */}
-        
+
         <ul className={`md:hidden flex flex-col gap-4 py-20 px-10 fixed top-0 bottom-0 w-64 z-50 h-screen bg-blue-50 transition-all duration-500 ${
           open ? "right-0" : "-right-64"
         }`}>

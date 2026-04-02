@@ -20,9 +20,9 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`${rationale.className} h-full antialiased`}
+      className="scroll-smooth"
     >
-      <body className="min-h-full flex flex-col">
+      <body className={`${rationale.className} antialiased leading-8 overflow-x-hidden`}>
         {children}
       </body>
     </html>
