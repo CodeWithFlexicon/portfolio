@@ -5,7 +5,7 @@ import { HiArrowCircleRight } from "react-icons/hi";
 import { CiDark } from "react-icons/ci";
 import { IoMenu, IoCloseOutline } from "react-icons/io5";
 import { useEffect, useState } from "react";
-import clsx from 'clsx';
+import clsx from "clsx";
 
 export default function Navbar() {
   const [open, setOpen] = useState(false);
@@ -28,20 +28,26 @@ export default function Navbar() {
     handleScroll();
 
     return () => window.removeEventListener("scroll", handleScroll);
-  }, [])
+  }, []);
 
   return (
     <>
-      <nav className={clsx(
-        "w-full fixed px-5 lg:px-8 xl:px-[8%] py-4 flex items-center justify-between z-50",
-        isScroll && "bg-white/50 backdrop-blur-lg shadow-sm"
-      )}>
-        <Link href="#home" className="w-28">Felix Chen</Link>
+      <nav
+        className={clsx(
+          "w-full fixed px-5 lg:px-8 xl:px-[8%] py-4 flex items-center justify-between z-50",
+          isScroll && "bg-white/50 backdrop-blur-lg shadow-sm",
+        )}
+      >
+        <Link href="#home" className="w-28">
+          Felix Chen
+        </Link>
 
-        <ul className={clsx(
-          "hidden md:flex items-center gap-6 lg:gap-8 rounded-full px-12 py-3",
-          !isScroll && "bg-white/50 backdrop-blur-lg shadow-sm"
-        )}>
+        <ul
+          className={clsx(
+            "hidden md:flex items-center gap-6 lg:gap-8 rounded-full px-12 py-3",
+            !isScroll && "bg-white/50 backdrop-blur-lg shadow-sm",
+          )}
+        >
           <li>
             <Link href="#home">Home</Link>
           </li>
@@ -93,7 +99,13 @@ export default function Navbar() {
             <Link href="#home">Home</Link>
           </li>
           <li>
-            <Link href="#about">About me</Link>
+            <Link href="#about">About</Link>
+          </li>
+          <li>
+            <Link href="#experience">Experience</Link>
+          </li>
+          <li>
+            <Link href="#skills">Skills</Link>
           </li>
           <li>
             <Link href="#projects">Projects</Link>
