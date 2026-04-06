@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Rationale } from "next/font/google";
 import "./globals.css";
+import Navbar from "./ui/navbar/navbar";
 
 const rationale = Rationale({
   subsets: ['latin'],
@@ -23,6 +24,7 @@ export default function RootLayout({
       className="scroll-smooth"
     >
       <body className={`${rationale.className} antialiased leading-8 overflow-x-hidden`}>
+        <Navbar />
         {children}
       </body>
     </html>
