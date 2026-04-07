@@ -7,8 +7,8 @@ export default function Experience() {
       <h1 className="text-center text-4xl mt-6">Journey so far</h1>
 
       <div className="w-full flex flex-col items-center text-center">
-        <div className="max-w-2xl w-full">
-          <ul className="mt-6 grid grid-cols-1 gap-4 max-w-2xl">
+        <div className="max-w-5xl w-full">
+          <ul className="mt-6 grid grid-cols-1 gap-4 max-w-5xl mx-auto">
             {experienceList.map((exp, index) => (
               <li
                 key={index}
@@ -33,24 +33,25 @@ export default function Experience() {
                 <div className="flex flex-col w-full gap-2">
                   <div className="grid grid-cols-[1fr_auto] items-center gap-x-4">
                     <div className="text-left">
-                        <h3 className="font-semibold text-gray-800">
-                            {exp.company}
-                            <span className="font-normal text-gray-600">
-                                {" "}- {exp.role}
-                            </span>
-                        </h3>
+                      <h3 className="font-semibold text-gray-800">
+                        {exp.company}
+                        <span className="font-normal text-gray-600">
+                          {" "}
+                          - {exp.role}
+                        </span>
+                      </h3>
                     </div>
 
                     <div className="text-right text-sm text-gray-500">
-                        {exp.date}
+                      {exp.date}
                     </div>
 
                     <div className="text-left text-sm text-gray-500">
-                        {exp.companyLocation}
+                      {exp.companyLocation}
                     </div>
 
                     <div className="text-right text-sm text-gray-500">
-                        {exp.location}
+                      {exp.location}
                     </div>
                   </div>
 

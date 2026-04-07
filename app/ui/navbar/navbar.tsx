@@ -38,7 +38,7 @@ export default function Navbar() {
           isScroll && "bg-white/50 backdrop-blur-lg shadow-sm",
         )}
       >
-        <Link href="#home" className="w-28">
+        <Link href="#home" className="w-28 text-3xl">
           Felix Chen
         </Link>
 
@@ -72,12 +72,15 @@ export default function Navbar() {
           <button>
             <CiDark className="h-7 w-7" />
           </button>
-          <Link
-            className="hidden lg:flex items-center gap-3 px-10 py-2.5 border border-gray-500 rounded-full ml-4"
-            href="#contact"
+          <a
+            className="group hidden lg:flex items-center gap-3 px-10 py-2.5 border border-gray-500 rounded-full ml-4 transition-all duration-300 hover:bg-blue-100 hover:-translate-y-0.5 hover:shadow-light-mode"
+            href="https://www.linkedin.com/in/felix-chen1/?skipRedirect=true"
+            target="_blank"
+            rel="noopener noreferrer"
           >
-            Contact <HiArrowCircleRight />
-          </Link>
+            Contact 
+            <HiArrowCircleRight className="transition-transform duration-300 group-hover:-rotate-45"/>
+          </a>
           <button className="block md:hidden ml-3" onClick={toggleMenu}>
             <IoMenu className="h-7 w-7" />
           </button>

@@ -9,8 +9,8 @@ export default function Skills() {
       </h4>
 
       <div className="w-full flex flex-col items-center text-center">
-        <div className="max-w-2xl w-full">
-          <ul className="mt-6 grid grid-cols-1 sm:grid-cols-2 gap-4 max-w-2xl">
+        <div className="max-w-5xl w-full">
+          <ul className="mt-6 grid grid-cols-1 sm:grid-cols-3 gap-4 max-w-5xl">
             {techList.map((tech, index) => {
               const Icon = tech.icon;
 
@@ -21,7 +21,9 @@ export default function Skills() {
                   hover:bg-light-hover hover:-translate-y-1 hover:shadow-light-mode
                   transition-all duration-300"
                 >
-                  <Icon className={`w-6 h-6 sm:w-7 sm:h-7 mt-1 shrink-0 ${tech.color}`}/>
+                  <Icon
+                    className={`w-6 h-6 sm:w-7 sm:h-7 mt-1 shrink-0 ${tech.color}`}
+                  />
 
                   <div className="flex flex-col text-left">
                     <span className="font-semibold text-gray-800">
