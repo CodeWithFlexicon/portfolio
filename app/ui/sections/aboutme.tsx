@@ -4,11 +4,13 @@ export default function AboutMe() {
   return (
     <section id="about" className="w-full py-16 scroll-mt-20">
       <div className="max-w-5xl mx-auto px-6 text-center">
-        <h4 className="mb-2 text-lg">Introduction</h4>
-        <h2 className="text-5xl">About Me</h2>
+        <h4 className="mb-2 text-lg text-gray-600 dark:text-text-dark-muted">
+          Introduction
+        </h4>
+        <h2 className="text-5xl text-black dark:text-text-dark">About Me</h2>
 
-        <p className="mt-10 mb-12 max-w-3xl mx-auto text-lg leading-8">
-          I'm a recent graduate from the City University of New York - College
+        <p className="mt-10 mb-12 max-w-3xl mx-auto text-lg leading-8 text-gray-700 dark:text-text-dark-muted">
+          I&apos;m a recent graduate from the City University of New York - College
           of Staten Island. My experience lies in full-stack development and I
           am passionate about creating and improving technology that improve the
           lives of people around us. Whenever I am not working on skills or
@@ -25,15 +27,18 @@ export default function AboutMe() {
             return (
               <li
                 key={index}
-                className="border-[0.5px] border-gray-400 rounded-xl p-6 cursor-pointer
+                className="border border-gray-400 rounded-xl p-6
+                bg-white text-black
                 hover:bg-light-hover hover:-translate-y-1 hover:shadow-light-mode
+                dark:bg-dark-surface dark:border-dark-border dark:text-text-dark
+                dark:hover:bg-dark-hover dark:hover:shadow-dark-mode
                 transition-all duration-300"
               >
                 <Icon className="w-5 h-5 mx-auto mt-3" />
-                <h3 className="my-4 font-semibold text-gray-700">
+                <h3 className="my-4 font-semibold text-gray-700 dark:text-text-dark">
                   {info.name}
                 </h3>
-                <p className="text-gray-600 text-sm">{info.description}</p>
+                <p className="text-gray-600 text-sm dark:text-text-dark-muted">{info.description}</p>
               </li>
             );
           })}

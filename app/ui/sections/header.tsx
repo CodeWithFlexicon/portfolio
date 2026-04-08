@@ -1,5 +1,4 @@
 import Image from "next/image";
-import Link from "next/link";
 import { FiArrowRight } from "react-icons/fi";
 import { SiGithub } from "react-icons/si";
 
@@ -32,7 +31,7 @@ export default function Header() {
               href="/documents/ChenFelix_Resume.pdf"
               target="_blank"
               rel="noopener noreferrer"
-              className="group px-10 py-3 border rounded-full border-gray-500 flex items-center gap-2 transition-all duration-300 hover:bg-blue-100 hover:-translate-y-0.5 hover:shadow-light-mode"
+              className="group px-10 py-3 border rounded-full border-gray-500 flex items-center gap-2 transition-all duration-300 hover:bg-blue-100 hover:-translate-y-0.5 hover:shadow-light-mode dark:hover:bg-dark-hover"
             >
               My Resume
               <FiArrowRight className="transition-transform duration-300 group-hover:-rotate-45" />
@@ -46,6 +45,7 @@ export default function Header() {
             width={1000}
             height={1000}
             alt="Profile Picture"
+            loading="eager"
             className="rounded-full ring-2 ring-gray-500 shadow-md w-56 sm:w-64 md:w-70 lg:w-90"
           />
         </div>

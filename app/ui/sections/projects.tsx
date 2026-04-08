@@ -13,23 +13,24 @@ export default function Projects() {
           {projects.map((project, index) => (
             <article
               key={index}
-              className="h-full overflow-hidden rounded-2xl border border-gray-300 bg-white shadow-sm hover:-translate-y-1 hover:shadow-light-mode transition-all duration-300 flex flex-col"
+              className="h-full overflow-hidden rounded-2xl border border-gray-300 bg-white shadow-sm flex flex-col dark:bg-dark-surface"
             >
               <div className="relative aspect-5/3 w-full overflow-hidden">
                 <Image
                   src={project.image}
                   alt={project.name}
                   fill
+                  sizes="(max-width: 640x) 100vw, (max-width: 1024px) 50vw, 33vw"
                   className="object-cover"
                 />
               </div>
 
               <div className="p-5 flex flex-col flex-1">
                 <div className="min-h-15">
-                  <h2 className="text-xl font-semibold text-black">
+                  <h2 className="text-xl font-semibold text-black dark:text-text-dark">
                     {project.name}
                   </h2>
-                  <p className="mt-2 text-sm text-gray-700">
+                  <p className="mt-2 text-sm text-gray-700 dark:text-text-dark-muted">
                     {project.description}
                   </p>
                 </div>
@@ -39,10 +40,11 @@ export default function Projects() {
                     href={project.github}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="flex items-center justify-center gap-2 rounded-full border border-gray-400 px-4 py-2 text-sm hover:bg-light-hover transition"
+                    className="group flex items-center justify-center gap-2 rounded-full border border-gray-400 px-4 py-2 text-sm hover:bg-light-hover transition
+                    dark:hover:bg-dark-hover"
                   >
                     GitHub
-                    <FaGithub />
+                    <FaGithub className="transiton-transform duration-200 group-hover:scale-110 group-hover:rotate-15" />
                   </a>
 
                   {project.website ? (

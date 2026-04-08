@@ -14,25 +14,30 @@ export default function Skills() {
             const Icon = tech.icon;
 
             return (
-              <li
+              <a
                 key={index}
-                className="flex items-center gap-3 p-4 border border-gray-400 rounded-lg cursor-pointer
+                className="flex items-center gap-3 p-4 bg-white border border-gray-400 text-black rounded-lg
                 hover:bg-light-hover hover:-translate-y-1 hover:shadow-light-mode
+                dark:border-dark-broder dark:text-text-dark
+                dark:bg-dark-surface dark:hover:bg-dark-hover dark:hover:shadow-dark-mode
                 transition-all duration-300"
+                href={tech.website}
+                target="_blank"
+                rel="noopener noreferrer"
               >
                 <Icon
                   className={`w-6 h-6 sm:w-7 sm:h-7 mt-1 shrink-0 ${tech.color}`}
                 />
 
                 <div className="flex flex-col text-left">
-                  <span className="font-semibold text-gray-800">
+                  <span className="font-semibold text-gray-800 dark:text-text-dark">
                     {tech.name}
                   </span>
-                  <p className="text-xs sm:text-sm text-gray-600">
+                  <p className="text-xs sm:text-sm text-gray-600 dark:text-text-dark-muted">
                     {tech.description}
                   </p>
                 </div>
-              </li>
+              </a>
             );
           })}
         </ul>

@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import { Rationale } from "next/font/google";
 import "./globals.css";
-import Navbar from "./ui/navbar/navbar";
 
 const rationale = Rationale({
   subsets: ['latin'],
@@ -9,7 +8,7 @@ const rationale = Rationale({
 });
 
 export const metadata: Metadata = {
-  title: "Felix Chen::Software Engineer",
+  title: "Felix Chen: Software Engineer",
   description: "Personal Website of Felix Chen",
 };
 
@@ -23,8 +22,7 @@ export default function RootLayout({
       lang="en"
       className="scroll-smooth"
     >
-      <body className={`${rationale.className} antialiased leading-8 overflow-x-hidden`}>
-        <Navbar />
+      <body className={`${rationale.className} antialiased leading-8 overflow-x-hidden bg-white text-black dark:bg-dark-theme dark:text-white transition-colors duration-300`}>
         {children}
       </body>
     </html>

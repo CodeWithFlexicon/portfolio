@@ -12,7 +12,7 @@ export default function Footer() {
 
         <a
           href="mailto:felixx.chenn@gmail.com"
-          className="group inline-flex items-center gap-2 text-lg border rounded-full px-5 py-3 shadow-sm hover:bg-light-hover hover:-translate-y-1 hover:shadow-light-mode transition-all duration-300"
+          className="group inline-flex items-center gap-2 text-lg border rounded-full px-5 py-3 shadow-sm hover:bg-light-hover hover:-translate-y-1 hover:shadow-light-mode transition-all duration-300 dark:hover:bg-dark-hover"
         >
           <span>Felixx.Chenn@gmail.com</span>
           <IoIosMail className="group-hover:translate-x-1 transition-transform duration-300" />
