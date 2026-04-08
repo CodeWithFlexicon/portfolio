@@ -11,13 +11,16 @@ export default function AboutMe() {
 
         <p className="mt-10 mb-12 max-w-3xl mx-auto text-lg leading-8 text-gray-700 dark:text-text-dark-muted">
           I&apos;m a recent graduate from the City University of New York - College
-          of Staten Island. My experience lies in full-stack development and I
-          am passionate about creating and improving technology that improve the
-          lives of people around us. Whenever I am not working on skills or
-          projects, I am usually found in the gym, watching shows, perusing
-          mystery novels, or playing games. My favorite movie series as of this
-          moment is Knives Out. A few of my favorite shows include From, True
-          Detective (Season 1), Wonder Man.
+          of Staten Island with a strong foundation in full-stack development. I
+          enjoy building and improving technology that makes a meaningful impact
+          on people&apos;s lives. My experience includes developing scalable backend
+          services, working with APIs, and creating user friendly applications.
+          I&apos;m particularly interested in backend development and continuously
+          improving my skills in building efficient, reliable systems. Outside
+          of coding, I enjoy going to the gym, watching shows, reading mystery
+          novels, and playing games. I&apos;m currently a fan of the Knives Out
+          series, and some of my favorite shows include From, True Detective
+          (Season 1), and Wonder Man.
         </p>
 
         <ul className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -38,7 +41,9 @@ export default function AboutMe() {
                 <h3 className="my-4 font-semibold text-gray-700 dark:text-text-dark">
                   {info.name}
                 </h3>
-                <p className="text-gray-600 text-sm dark:text-text-dark-muted">{info.description}</p>
+                <p className="text-gray-600 text-sm dark:text-text-dark-muted">
+                  {info.description}
+                </p>
               </li>
             );
           })}
