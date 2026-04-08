@@ -10,7 +10,7 @@ export type Experience = {
 
 export const experienceList: Experience[] = [
   {
-    image: "/images/CharityNavigatorCompany.png",
+    image: "/images/charitynavigatorlogo.png",
     role: "Software Engineer Intern",
     company: "Charity Navigator",
     companyLocation: "Saddle Brook, NJ",
@@ -20,7 +20,7 @@ export const experienceList: Experience[] = [
       "TypeScript, BullMQ (Message Queue), Knex, PostgreSQL, IBM Cloudant",
   },
   {
-    image: "/images/TechTalentPipeline.jpeg",
+    image: "/images/techtalentpipelinelogo.jpeg",
     role: "Software Engineer Fellow",
     company: "NYC Tech Talent Pipeline",
     companyLocation: "Staten Island, NY",
@@ -30,7 +30,7 @@ export const experienceList: Experience[] = [
       "JavaScript, React, Node.js, Express.js, PosgreSQL, Jest, AWS(EC2)",
   },
   {
-    image: "/images/RFCUNY.jpg",
+    image: "/images/rfcunylogo.jpg",
     role: "Web Developer Intern",
     company: "RFCUNY (Research Foundation of CUNY)",
     companyLocation: "New York, NY",

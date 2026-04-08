@@ -15,7 +15,7 @@ export default function Projects() {
               key={index}
               className="h-full overflow-hidden rounded-2xl border border-gray-300 bg-white shadow-sm hover:-translate-y-1 hover:shadow-light-mode transition-all duration-300 flex flex-col"
             >
-              <div className="relative aspect-4/2 w-full overflow-hidden">
+              <div className="relative aspect-5/3 w-full overflow-hidden">
                 <Image
                   src={project.image}
                   alt={project.name}
@@ -25,7 +25,7 @@ export default function Projects() {
               </div>
 
               <div className="p-5 flex flex-col flex-1">
-                <div className="min-h-10">
+                <div className="min-h-15">
                   <h2 className="text-xl font-semibold text-black">
                     {project.name}
                   </h2>

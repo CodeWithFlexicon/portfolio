@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import { HiArrowCircleRight } from "react-icons/hi";
+import { FaLinkedin } from 'react-icons/fa';
 import { CiDark } from "react-icons/ci";
 import { IoMenu, IoCloseOutline } from "react-icons/io5";
 import { useEffect, useState } from "react";
@@ -63,23 +63,20 @@ export default function Navbar() {
           <li>
             <Link href="#projects">Projects</Link>
           </li>
-          <li>
-            <Link href="#contact">Contact me</Link>
-          </li>
         </ul>
 
-        <div className="flex items-center gap-4">
+        <div className="flex items-center gap-3">
           <button>
             <CiDark className="h-7 w-7" />
           </button>
           <a
-            className="group hidden lg:flex items-center gap-3 px-10 py-2.5 border border-gray-500 rounded-full ml-4 transition-all duration-300 hover:bg-blue-100 hover:-translate-y-0.5 hover:shadow-light-mode"
+            className="group hidden lg:flex items-center gap-1 px-10 py-2.5 border border-gray-500 rounded-full ml-4 transition-all duration-300 hover:bg-blue-100 hover:-translate-y-0.5 hover:shadow-light-mode"
             href="https://www.linkedin.com/in/felix-chen1/?skipRedirect=true"
             target="_blank"
             rel="noopener noreferrer"
           >
-            Contact 
-            <HiArrowCircleRight className="transition-transform duration-300 group-hover:-rotate-45"/>
+            LinkedIn
+            <FaLinkedin className="transition-transform duration-300 group-hover:rotate-15"/>
           </a>
           <button className="block md:hidden ml-3" onClick={toggleMenu}>
             <IoMenu className="h-7 w-7" />
@@ -112,9 +109,6 @@ export default function Navbar() {
           </li>
           <li>
             <Link href="#projects">Projects</Link>
-          </li>
-          <li>
-            <Link href="#contact">Contact me</Link>
           </li>
         </ul>
       </nav>

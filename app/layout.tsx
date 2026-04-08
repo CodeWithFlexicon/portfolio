@@ -9,8 +9,8 @@ const rationale = Rationale({
 });
 
 export const metadata: Metadata = {
-  title: "Felix Chen Portfolio",
-  description: "My personal portfolio website",
+  title: "Felix Chen::Software Engineer",
+  description: "Personal Website of Felix Chen",
 };
 
 export default function RootLayout({

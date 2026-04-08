@@ -3,6 +3,7 @@ import AboutMe from "./ui/sections/aboutme";
 import Skills from "./ui/sections/skills";
 import Experience from "./ui/sections/experience";
 import Projects from "./ui/sections/projects";
+import Footer from "./ui/sections/footer";
 
 export default function Home() {
   return (
@@ -12,6 +13,7 @@ export default function Home() {
       <Experience />
       <Skills />
       <Projects />
+      <Footer />
     </>
   );
 }
