@@ -41,7 +41,7 @@ export default function Header() {
 
         <div>
           <Image
-            src="/images/profilepicture.jpeg"
+            src="/images/profilepic.jpg"
             width={1000}
             height={1000}
             alt="Profile Picture"
