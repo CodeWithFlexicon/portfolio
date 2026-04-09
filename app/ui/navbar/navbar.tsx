@@ -50,34 +50,36 @@ export default function Navbar({ darkMode, setDarkMode }: NavbarProps) {
         Felix Chen
       </Link>
 
-      <ul className={clsx(
-        "hidden md:flex items-center gap-6 lg:gap-8 rounded-full px-12 py-3",
-        !isScroll
-          ? "bg-white border border-gray-200 shadow-sm dark:bg-dark-surface dark:border-dark-border"
-          : "",
-      )}>
+      <ul
+        className={clsx(
+          "hidden md:flex items-center gap-6 lg:gap-8 rounded-full px-12 py-3",
+          !isScroll
+            ? "bg-white border border-gray-200 shadow-sm dark:bg-dark-surface dark:border-dark-border"
+            : "",
+        )}
+      >
         <li>
-          <Link className="text-black dark:text-text-dark" href="#home">
+          <Link className="text-black dark:text-text-dark" href="/#home">
             Home
           </Link>
         </li>
         <li>
-          <Link className="text-black dark:text-text-dark" href="#about">
+          <Link className="text-black dark:text-text-dark" href="/#about">
             About
           </Link>
         </li>
         <li>
-          <Link className="text-black dark:text-text-dark" href="#experience">
+          <Link className="text-black dark:text-text-dark" href="/#experience">
             Experience
           </Link>
         </li>
         <li>
-          <Link className="text-black dark:text-text-dark" href="#skills">
+          <Link className="text-black dark:text-text-dark" href="/#skills">
             Skills
           </Link>
         </li>
         <li>
-          <Link className="text-black dark:text-text-dark" href="#projects">
+          <Link className="text-black dark:text-text-dark" href="/#projects">
             Projects
           </Link>
         </li>
@@ -90,32 +92,15 @@ export default function Navbar({ darkMode, setDarkMode }: NavbarProps) {
           className="flex items-center justify-center rounded-full border border-gray-300 cursor-pointer dark:border-dark-border p-2 text-black dark:text-text-dark transition-all duration-300 hover:bg-gray-300 dark:hover:bg-dark-hover"
           aria-label="Toggle dark mode"
         >
-          <span
-            suppressHydrationWarning={true}
-            className="relative h-6 w-6 flex items-center justify-center overflow-hidden"
-          >
-            <FaMoon
-              className={clsx(
-                "absolute transition-all duration-300",
-                darkMode
-                  ? "rotate-90 scale-0 opacity-0"
-                  : "rotate-0 scale-100 opacity-100",
-              )}
-            />
-            <FaSun
-              className={clsx(
-                "absolute transition-all duration-300",
-                darkMode
-                  ? "rotate-90 scale-100 opacity-100"
-                  : "-rotate-90 scale-0 opacity-0",
-              )}
-            />
+          <span className="relative h-6 w-6 flex items-center justify-center overflow-hidden">
+            <FaMoon className="absolute transition-all duration-300 dark:rotate-90 dark:scale-0 dark:opacity-0 rotate-0 scale-100 opacity-100" />
+            <FaSun className="absolute transition-all duration-300 rotate-90 scale-0 opacity-0 dark:rotate-0 dark:scale-100 dark:opacity-100" />
           </span>
         </button>
 
         <a
           className="group hidden lg:flex items-center px-10 py-2.5 border border-gray-300 dark:border-dark-border rounded-full ml-4 text-black dark:text-text-dark transition-all duration-300 hover:bg-blue-100 dark:hover:bg-dark-hover hover:-translate-y-0.5 hover:shadow-light-mode dark:hover:shadow-dark-mode"
-          href="https://www.linkedin.com/in/felix-chen1/?skipRedirect=true"
+          href="https://www.linkedin.com/in/felix-chen1"
           target="_blank"
           rel="noopener noreferrer"
         >
@@ -142,27 +127,27 @@ export default function Navbar({ darkMode, setDarkMode }: NavbarProps) {
         </div>
 
         <li>
-          <Link href="#home" onClick={closeMenu}>
+          <Link href="/#home" onClick={closeMenu}>
             Home
           </Link>
         </li>
         <li>
-          <Link href="#about" onClick={closeMenu}>
+          <Link href="/#about" onClick={closeMenu}>
             About
           </Link>
         </li>
         <li>
-          <Link href="#experience" onClick={closeMenu}>
+          <Link href="/#experience" onClick={closeMenu}>
             Experience
           </Link>
         </li>
         <li>
-          <Link href="#skills" onClick={closeMenu}>
+          <Link href="/#skills" onClick={closeMenu}>
             Skills
           </Link>
         </li>
         <li>
-          <Link href="#projects" onClick={closeMenu}>
+          <Link href="/#projects" onClick={closeMenu}>
             Projects
           </Link>
         </li>

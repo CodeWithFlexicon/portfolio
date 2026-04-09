@@ -2,7 +2,7 @@ import { infoList } from "@/app/data/infoList";
 
 export default function AboutMe() {
   return (
-    <section id="about" className="w-full py-16 scroll-mt-20">
+    <section id="about" className="w-full py-16 scroll-mt-24">
       <div className="max-w-5xl mx-auto px-6 text-center">
         <h4 className="mb-2 text-lg text-gray-600 dark:text-text-dark-muted">
           Introduction
