@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Rationale } from "next/font/google";
+import { Analytics } from '@vercel/analytics/next';
 import "./globals.css";
 
 const rationale = Rationale({
@@ -24,6 +25,7 @@ export default function RootLayout({
     >
       <body className={`${rationale.className} antialiased leading-8 overflow-x-hidden bg-white text-black dark:bg-dark-theme dark:text-white transition-colors duration-300`}>
         {children}
+        <Analytics />
       </body>
     </html>
   );
