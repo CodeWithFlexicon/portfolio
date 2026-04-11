@@ -11,10 +11,10 @@ export default function Header() {
             <h1 className="text-5xl sm:text-6xl lg:text-7xl font-semibold">
               Felix Chen
             </h1>
-            <h2 className="text-xl sm:text-2xl mt-3 text-gray-600">
+            <h2 className="text-xl sm:text-2xl mt-3 text-gray-600 dark:text-text-dark-muted">
               Software Engineer from NYC
             </h2>
-            <p className="mt-4 max-w-xl">
+            <p className="mt-4 max-w-xl dark:text-text-dark">
               Recent graduate from CUNY - College of Staten Island
             </p>
 
@@ -23,7 +23,7 @@ export default function Header() {
                 href="https://github.com/CodeWithFlexicon"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="group px-10 py-3 border border-white rounded-full bg-black text-white flex items-center gap-2 transition-all duration-200 hover:-translate-y-0.5 hover:shadow-light-mode"
+                className="group px-10 py-3 border border-white rounded-full bg-black text-white flex items-center gap-2 transition-all duration-200 hover:-translate-y-0.5 hover:shadow-light-mode dark:hover:bg-dark-hover"
               >
                 GitHub
                 <SiGithub className="transition-all duration-200 group-hover:scale-140 group-hover:-rotate-6" />

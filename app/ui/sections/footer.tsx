@@ -6,7 +6,7 @@ export default function Footer() {
     <footer className="w-full mt-20">
       <div className="max-w-5xl mx-auto px-6 py-12 text-center">
         <h1 className="text-4xl mb-2">Want to Connect?</h1>
-        <h4 className="text-lg text-gray-600 mb-6">
+        <h4 className="text-lg text-gray-600 mb-6 dark:text-text-dark">
           Always interested in collaboration and different perspectives
         </h4>
 
